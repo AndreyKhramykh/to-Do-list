@@ -1,0 +1,527 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: RussoOne;
+}
+
+@font-face {
+  font-family: RussoOne;
+  src: url(fonts/RussoOne-Regular.ttf);
+}
+
+:root {
+  --shadowColor: #561476;
+  --mainTextColor: #18003C;
+  --buttonColor: #490C6B;
+  --textColor2: #E3FDFC;
+}
+
+body {
+  background-image: url(img/main/bg6.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 16px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2% 2% 0 2%;
+}
+
+.header__h1 {
+  color: var(--mainTextColor);
+  font-weight: bold;
+  font-size: 40px;
+  text-shadow: 1px 1px 2px var(--shadowColor);
+  white-space: nowrap;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 2% 2% 2%;
+}
+
+.addingBlock {
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.addingBlock__form {
+  width: 40%;
+}
+
+.addingBlock__input {
+  width: 100%;
+  color: var(--buttonColor);
+  padding: 1%;
+  border: 2px solid #5514762f;
+  background-color: #5514762a;
+}
+
+.addingBlock__button {
+  padding: 2%;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: white;
+  border: 2px solid var(--shadowColor);
+  background-color: var(--buttonColor);
+  border-radius: 2%;
+  -webkit-box-shadow: 2px 2px 4px black;
+          box-shadow: 2px 2px 4px black;
+}
+
+.addingBlock__button:hover {
+  background-color: #4a0c6bdb;
+}
+
+.week {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.week__day {
+  text-align: center;
+  background-color: #4a0c6bcc;
+  padding: 1%;
+  color: white;
+  -webkit-box-shadow: 2px 2px 4px black;
+          box-shadow: 2px 2px 4px black;
+  cursor: pointer;
+  width: 12%;
+  overflow-x: hidden;
+}
+
+.week__day_active {
+  background-color: green;
+}
+
+.week__day_active:hover {
+  background-color: rgba(0, 128, 0, 0.865);
+}
+
+.week__day_passive {
+  background-color: #4a0c6bcc;
+}
+
+.week__day_passive:hover {
+  background-color: #4a0c6be6;
+}
+
+.goalsList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.goal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 1%;
+  padding: 2%;
+  background-color: #5514762a;
+}
+
+.goal_completed {
+  background-color: rgba(0, 128, 0, 0.25);
+}
+
+.goal_failed {
+  background-color: rgba(255, 0, 0, 0.25);
+}
+
+.goal__text {
+  padding: 10px;
+  width: 50%;
+  word-wrap: break-word;
+  font-size: 20px;
+  color: var(--mainTextColor);
+}
+
+.goal__imagesBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 30%;
+}
+
+.goal__img {
+  cursor: pointer;
+  margin-left: 4%;
+  width: 40px;
+  height: 40px;
+}
+
+.totalMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2%;
+  font-size: 26px;
+  color: var(--mainTextColor);
+}
+
+.totalMenu__general {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.totalMenu__number {
+  font-size: 26px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.totalMenu__day {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.totalMenu__dayNumber {
+  font-size: 26px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.totalMenu__clearDay {
+  padding: 2%;
+  margin: 2%;
+  height: 40%;
+  overflow-x: hidden;
+  cursor: pointer;
+  white-space: nowrap;
+  font-weight: 300;
+  font-size: 22px;
+  color: white;
+  border: 2px solid var(--shadowColor);
+  background-color: var(--buttonColor);
+  border-radius: 2%;
+  -webkit-box-shadow: 2px 2px 4px black;
+          box-shadow: 2px 2px 4px black;
+}
+
+.totalMenu__clearDay:hover {
+  background-color: #4a0c6bdb;
+}
+
+.totalMenu__clearAllBtn {
+  padding: 2%;
+  margin: 2%;
+  height: 40%;
+  cursor: pointer;
+  font-weight: 300;
+  font-size: 22px;
+  color: white;
+  border: 2px solid var(--shadowColor);
+  background-color: var(--buttonColor);
+  border-radius: 2%;
+  -webkit-box-shadow: 2px 2px 4px black;
+          box-shadow: 2px 2px 4px black;
+}
+
+.totalMenu__clearAllBtn:hover {
+  background-color: #4a0c6bdb;
+}
+
+.totalMenuWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.totalMenuWrapper__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 20%;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5%;
+  background-color: #4a0c6b61;
+  color: var(--mainTextColor);
+}
+
+.footer__dev {
+  font-size: 24px;
+}
+
+.footer__links {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__linksLink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  height: 10%;
+  cursor: pointer;
+}
+
+.linksImage {
+  width: 40px;
+  height: 40px;
+}
+
+.linksImage_displayOff {
+  display: none;
+}
+
+.linksImage:hover .linksText {
+  color: white;
+}
+
+.linksText {
+  width: 70%;
+  color: var(--mainTextColor);
+}
+
+.linksText_active {
+  color: white;
+}
+
+@media screen and (max-width: 1090px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 906px) {
+  body {
+    font-size: 10px;
+  }
+  .totalMenu__clearDay {
+    font-size: 12px;
+  }
+  .totalMenu__clearAllBtn {
+    font-size: 12px;
+  }
+  .linksText {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  body {
+    font-size: 8px;
+  }
+  .linksText {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .week {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 20%;
+  }
+  .week__day {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10%;
+  }
+  .content {
+    position: relative;
+  }
+  .goalsList {
+    width: 75%;
+    position: absolute;
+    top: 28%;
+    left: 23%;
+  }
+  .goal__text {
+    font-size: 10px;
+  }
+  .goal {
+    padding: 1%;
+  }
+  .goal__img {
+    width: 20px;
+    height: 20px;
+  }
+  .linksText {
+    margin-left: 10px;
+  }
+  .totalMenu__clearDay {
+    font-size: 8px;
+  }
+  .totalMenu__clearAllBtn {
+    font-size: 8px;
+  }
+  .totalMenuWrapper {
+    font-size: 10px;
+  }
+  .totalMenu__dayNumber {
+    font-size: 12px;
+    margin-left: 5px;
+  }
+  .totalMenu__number {
+    font-size: 12px;
+    margin-left: 5px;
+  }
+  .footer__dev {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .addingBlock__button {
+    font-size: 1rem;
+  }
+  .footer {
+    padding: 2%;
+  }
+  .linksImage {
+    width: 20px;
+    height: 20px;
+  }
+  .goal__text {
+    font-size: 8px;
+  }
+  .totalMenu__clearDay {
+    font-size: 6px;
+  }
+  .totalMenu__clearAllBtn {
+    font-size: 6px;
+  }
+  .footer__dev {
+    font-size: 6px;
+  }
+  .linksText {
+    margin-left: 2px;
+  }
+  .goalsList {
+    top: 24%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

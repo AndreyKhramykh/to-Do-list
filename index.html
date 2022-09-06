@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo-list</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/main/checkedNewSize2.png">
+</head>
+<body>
+    <div class="header">
+        <h1 class="header__h1">Список дел</h1>
+    </div>
+    <div class="content">
+        <div class="addingBlock">
+            <form action="" class="addingBlock__form">
+                <input class="addingBlock__input"></input>
+            </form>
+            <button class="addingBlock__button">Добавить задачу</button>
+        </div>
+        <div class="week">
+            <div class="week__day week__day_monday">Понедельник</div>
+            <div class="week__day week__day_tuesday">Вторник</div>
+            <div class="week__day week__day_wednesday">Среда</div>
+            <div class="week__day week__day_thursday">Четверг</div>
+            <div class="week__day week__day_friday">Пятница</div>
+            <div class="week__day week__day_saturday">Суббота</div>
+            <div class="week__day week__day_sunday">Воскресенье</div>
+        </div>
+        <div class="goalsList">
+
+        </div>
+        <div class="totalMenu">
+            <div class="totalMenuWrapper">
+                <div class="totalMenu__day">
+                    <div class="totalMenu__dayDay"></div>
+                    <div class="totalMenu__dayNumber"></div>
+                </div>
+                <div class="totalMenu__general">
+                    Итого задач за неделю:
+                    <p class="totalMenu__number"></p>
+                </div>
+            </div>
+            <div class="totalMenuWrapper__buttons">
+                <button class="totalMenu__clearDay">Удалить день</button>
+                <button class="totalMenu__clearAllBtn">Удалить всё</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer__dev">This page was developed by Andrey Khram</div>
+        <div class="footer__links">
+            <a class="footer__linksLink" id="gitHubItem" href="https://github.com/AndreyKhramykh"  target="_blank">
+                <img class="linksImage" id="gitHubLogo" src="img/main/github2.svg" alt="">
+                <img class="linksImage linksImage_displayOff" id="gitHubLogoWhite" src="img/main/github2_white.svg" alt="">
+                <p class="linksText" id="gitHubText">GitHub</p>
+            </a>
+            <a class="footer__linksLink" id='instagramItem' href="https://www.instagram.com/khram_materializma/" target="_blank">
+                <img class="linksImage" id="instagramLogo" src="img/main/inst.svg" alt="">
+                <img class="linksImage linksImage_displayOff" id="instagramLogoWhite" src="img/main/inst_white.svg" alt="">
+
+                <p class="linksText" id="instagramText">Instagram</p>
+            </a>
+            <a class="footer__linksLink" id='facebookItem' href="https://www.facebook.com/andrey.khramykh.1/" target="_blank">
+                <img class="linksImage" id="facebookLogo" src="img/main/fb.svg" alt="">
+                <img class="linksImage linksImage_displayOff" id="facebookLogoWhite" src="img/main/fb_white.svg" alt="">
+                <p class="linksText" id="facebookText">Facebook</p>
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
