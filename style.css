@@ -19,10 +19,21 @@
 }
 
 body {
-  background-image: url(img/main/bg6.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-image: url(img/main/bgOpacity.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
+  background-attachment: fixed;
   font-size: 16px;
+  height: 100vh;
 }
 
 .header {
@@ -58,6 +69,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 0 2% 2% 2%;
 }
 
@@ -120,8 +134,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .week__day {
@@ -438,6 +453,9 @@ body {
 }
 
 @media screen and (max-width: 550px) {
+  .addingBlock__button {
+    font-size: 1.2rem;
+  }
   .week {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -450,14 +468,20 @@ body {
     margin-top: 10px;
     padding: 10%;
   }
-  .content {
-    position: relative;
+  .weekWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .goalsList {
     width: 75%;
-    position: absolute;
-    top: 28%;
-    left: 23%;
   }
   .goal__text {
     font-size: 10px;
@@ -492,6 +516,10 @@ body {
   .footer__dev {
     font-size: 12px;
   }
+  .linksImage {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 @media screen and (max-width: 410px) {
@@ -522,6 +550,23 @@ body {
   }
   .goalsList {
     top: 24%;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .addingBlock__button {
+    font-size: 0.8rem;
+  }
+  .goal__img {
+    width: 10px;
+    height: 10px;
+  }
+  .linksImage {
+    width: 10px;
+    height: 10px;
+  }
+  body {
+    font-size: 6px;
   }
 }
 /*# sourceMappingURL=style.css.map */
